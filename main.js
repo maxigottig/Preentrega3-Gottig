@@ -26,13 +26,13 @@ mostrarConsejos(interes);
 function mostrarConsejos(interes) {
   let consejos =
   interes < 1000
-      ? 'Esperar al vencimiento del plazo fijo y comprar dolares'
+      ? 'Consejo: Esperar al vencimiento del plazo fijo y comprar dolares'
       : interes >= 1001 && interes < 20000
-      ? 'Reinvertir durante 30 días más el capital final obtenido'
+      ? 'Consejo: Reinvertir durante 30 días más el capital final obtenido'
       : interes >= 20001 && interes < 100000
-      ? 'Esperar al vencimiento del plazo fijo e invertir en Plazo Fijo UVA'
+      ? 'Consejo: Esperar al vencimiento del plazo fijo e invertir en Plazo Fijo UVA'
       : interes >= 100001
-      ? 'Esperar al vencimiento del plazo fijo y diversificar el capital final'
+      ? 'Consejo: Esperar al vencimiento del plazo fijo y diversificar el capital final'
       : 'Ha ocurrido un error al mostrar los consejos.';
 
   document.querySelector('#consejos').textContent = consejos;
