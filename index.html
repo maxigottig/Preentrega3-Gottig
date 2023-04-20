@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora de Plazo Fijo</title>
+</head>
+<body>
+    <header>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-$blue-200">
+                <div class="container-fluid">
+                        <div class="collapse navbar-collapse barra" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Servicios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Objetivo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contacto</a>
+                                    </li>
+                                </ul>
+                        </div>
+                </div>
+                </nav>
+        </div>    
+    </header>
+    <h1>Calculadora de Plazo Fijo</h1>
+    <form>
+    <label for="monto">Deposito inicial:</label>
+    <input placeholder="$" type="number" id="monto" name="monto" required><br>
+
+    <label for="plazo">Duración (en días):</label>
+    <input placeholder="días" type="number" id="plazo" name="plazo" required><br>
+
+    <label for="tasa">Interés anual (TNA):</label>
+    <input placeholder="%" type="number" id="tasa" name="tasa" required><br>
+
+    <button type="submit">Calcular</button>
+    </form>
+
+    <div class="resultado" id="resultado">
+    <!-- Aquí se mostrará el resultado del cálculo -->
+    </div>
+    <div class="resultado" id="consejos">
+        <!-- Aquí se mostrará el resultado del cálculo -->
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
