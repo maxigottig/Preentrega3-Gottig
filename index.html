@@ -37,23 +37,17 @@
     </header>
     <h1>Calculadora de Plazo Fijo</h1>
     <form>
-    <label for="monto">Deposito inicial:</label>
-    <input placeholder="$" type="number" id="monto" name="monto" required><br>
-
-    <label for="plazo">Duración (en días):</label>
-    <input placeholder="días" type="number" id="plazo" name="plazo" required><br>
-
-    <label for="tasa">Interés anual (TNA):</label>
-    <input placeholder="%" type="number" id="tasa" name="tasa" required><br>
-
-    <button type="submit">Calcular</button>
+        <label for="monto">Deposito inicial:</label>
+        <input placeholder="$" type="number" id="monto" name="monto" required><br>
+        <label for="plazo">Duración (en días):</label>
+        <input placeholder="días" type="number" id="plazo" name="plazo" required><br>
+        <label for="tasa">Interés anual (TNA):</label>
+        <input placeholder="%" type="number" id="tasa" name="tasa" required><br>
+        <button type="submit">Calcular</button>
     </form>
-
     <div class="resultado" id="resultado">
-    <!-- Aquí se mostrará el resultado del cálculo -->
     </div>
-    <div class="resultado" id="consejos">
-        <!-- Aquí se mostrará el resultado del cálculo -->
+    <div class="consejos" id="consejos">
     </div>
     <script src="./main.js"></script>
 </body>

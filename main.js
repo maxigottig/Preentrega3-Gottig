@@ -21,17 +21,17 @@ const tasa = parseFloat(tasaInput.value);
 
   // Mostrar el resultado en la página
 resultadoDiv.textContent = `Tu capital final es: $${interes.toFixed(2)}`;
-mostrarConsejos(inversion);
+mostrarConsejos(interes);
 });
-function mostrarConsejos(inversion) {
+function mostrarConsejos(interes) {
   let consejos =
-  inversion < 1000
+  interes < 1000
       ? 'Esperar al vencimiento del plazo fijo y comprar dolares'
-      : inversion >= 1001 && inversion < 20000
+      : interes >= 1001 && interes < 20000
       ? 'Reinvertir durante 30 días más el capital final obtenido'
-      : inversion >= 20001 && inversion < 100000
+      : interes >= 20001 && interes < 100000
       ? 'Esperar al vencimiento del plazo fijo e invertir en Plazo Fijo UVA'
-      : inversion >= 100001
+      : interes >= 100001
       ? 'Esperar al vencimiento del plazo fijo y diversificar el capital final'
       : 'Ha ocurrido un error al mostrar los consejos.';
 
